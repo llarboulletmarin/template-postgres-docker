@@ -1,2 +1,4 @@
+*.env
+
 .idea
-template-postgres-docker.iml
+*.iml
