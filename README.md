@@ -19,11 +19,11 @@ docker ps
 ### Connexion à la base de données
 Pour se connecter à la base de données avec l'interface psql :
 ```bash
-docker-compose exec -it postgres psql -U <user> -d <database>
+docker exec -it <container_name> psql -U <user> -d <database>
 ```
 Pour afficher le fichier de configuration :
 ```bash
-docker exec -it postgres cat /etc/postgresql/postgresql.conf
+docker exec -it <container_name> cat /etc/postgresql/postgresql.conf
 ```
 Pour afficher les logs :
 ```bash
